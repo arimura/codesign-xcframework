@@ -15,6 +15,9 @@ build/MyDemo.xcframework:
 	  -framework ./build/Build/Products/Release-iphonesimulator/MyDemo.framework \
 	  -output MyDemo.xcframework
 
+codesign:
+	codesign --sign "MyDemo" --force --timestamp=none MyDemo.xcframework
+
 clean:
 	rm -rf build
 	

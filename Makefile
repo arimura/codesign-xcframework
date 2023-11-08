@@ -10,5 +10,7 @@ build/MyDemo.xcframework:
 	  SKIP_INSTALL=NO \
 	  ARCHS="x86_64 arm64" \
 	  -derivedDataPath ./build
-	
+
+clean:
+	rm -rf build
 	

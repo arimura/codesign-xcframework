@@ -10,6 +10,10 @@ build/MyDemo.xcframework:
 	  SKIP_INSTALL=NO \
 	  ARCHS="x86_64 arm64" \
 	  -derivedDataPath ./build
+	xcodebuild -create-xcframework \
+	  -framework ./build/Build/Products/Release-iphoneos/MyDemo.framework \
+	  -framework ./build/Build/Products/Release-iphonesimulator/MyDemo.framework \
+	  -output MyDemo.xcframework
 
 clean:
 	rm -rf build

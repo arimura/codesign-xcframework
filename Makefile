@@ -19,5 +19,5 @@ codesign:
 	codesign --sign "MyDemo" --force --timestamp=none MyDemo.xcframework
 
 clean:
-	rm -rf build
+	rm -rf build MyDemo.xcframework
 	
